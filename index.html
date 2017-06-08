@@ -1,0 +1,221 @@
+<html>
+    <head>
+        <title>Abshir's Portfolio</title>
+        <meta name = "keywords" content ="Abshir Portfolio">
+        <meta name = "description" content = "Abshir's Portfolio">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyAeUoAwJQhRCOGrX7DG1nizKaIJY-CUbyU",
+                authDomain: "portfolio-c694b.firebaseapp.com",
+                databaseURL: "https://portfolio-c694b.firebaseio.com",
+                projectId: "portfolio-c694b",
+                storageBucket: "portfolio-c694b.appspot.com",
+                messagingSenderId: "964127857030"
+            };
+            firebase.initializeApp(config);
+        </script>
+        <link rel="stylesheet" href="index.css">
+        <script>
+            $(function() {
+                $('.js-nav a, .js-connect').click(function(e) {
+                    e.preventDefault();
+                    $('body, html').animate({
+                    scrollTop: $($.attr(this, 'href')).offset().top
+                    }, 750);
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header role="header">
+                <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                    <div class="container">
+                        <div class="navbar-header">
+                        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse" role="button">
+                            <span class="sr-only">Toggle Navigation</span>
+                            
+                            <span class="icon-bar"></span>
+                            
+                            <span class="icon-bar"></span>
+                            
+                            <span class="icon-bar"></span>
+                        </button>
+
+                        <a href="#" class="navbar-brand">Abshir</a>
+                        </div>
+
+                        <div class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav navbar-right js-nav">
+                                <li><a href="#home">Home</a></li>
+
+                                <li><a href="#about">About</a></li>
+
+                                <li><a href="#services">Skills</a></li>
+
+                                <li><a href="#portfolio">Portfolio</a></li>
+
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <section id="home" class="sec-main">
+                <h1 class="main-heading">Permanent Beta</h1>
+            </section>
+            <hr />
+
+            <section id="portfolio" class="sec-portfolio">
+                <div class="container">
+                <h1>Portfolio</h1>
+
+                <hr />
+
+                <div class="row">
+                    <div class="col-md-4">
+                    <img class="center-block" src="file:///Users/dogmai24/Desktop/JobFolder/portfolio/Screen%20Shot%202017-06-06%20at%202.28.37%20PM.png" />
+                    </div>
+
+                    <div class="col-md-4">
+                    <img class="center-block" src="file:///Users/dogmai24/Desktop/JobFolder/portfolio/Screen%20Shot%202017-06-06%20at%202.34.36%20PM.png"/>
+                    </div>
+
+                    <div class="col-md-4">
+                    <img class="center-block" src="file:///Users/dogmai24/Desktop/JobFolder/portfolio/Screen%20Shot%202017-06-06%20at%202.29.41%20PM.png"/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                    <img class="center-block" src="file:///Users/dogmai24/Desktop/JobFolder/portfolio/myadvicelogin.png" />
+                    </div>
+
+                    <div class="col-md-4">
+                    <img class="center-block" src="file:///Users/dogmai24/Desktop/JobFolder/portfolio/myadviceaskpage.png"/>
+                    </div>
+
+                    <div class="col-md-4">
+                    <img class="center-block" src="file:///Users/dogmai24/Desktop/JobFolder/portfolio/AskPage.png"/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                    <img class="center-block" src="file:///Users/dogmai24/Desktop/JobFolder/portfolio/chathome.png"/>
+                    </div>
+
+                    <div class="col-md-4">
+                    <img class="center-block" src="file:///Users/dogmai24/Desktop/JobFolder/portfolio/chatchat.png"/>
+                    </div>
+                </div>
+                </div>
+            </section>
+            <section id="services" class="sec-services">
+                <div class="container">
+                    <h1>Technologies</h1>
+
+                    <hr />
+
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="hcj.png" class="skills">
+                            <img src="csharp.jpg" class="skills">
+                            <img src="python.png" class="skills">
+                            <h2 class="h3">Languages</h2>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <img src="angular.jpg" class="skills">
+                            <img src="aspnet.jpg" class="skills">
+                            <img src="django.jpg" class="skills">
+                            <h2 class="h3">Frameworks</h2>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <img src="mongodb.png" class="skills">
+                            <img src="sqllite.jpg" class="skills">
+                            <img src="mysql.png" class="skills">
+                            <h2 class="h3">Databases</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+             <section id="about" class="sec-about">
+                <div class="container">
+                    <img class = "profile-pic" src="file:///Users/dogmai24/Desktop/JobFolder/portfolio/Abshir%201.jpg" class="img-round"></img>
+                    <h1>About me</h1>
+
+                    <hr />
+
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3">
+                            <p>Hello my name is Abshir Mohamed! I am a software developer who is based out of the Greater Seattle Area.
+                                I enjoy solving challenging problems and utilizing my creativity as a developer.
+                                Contact me down below if you have any questions!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="sec-contact">
+                <div class="container">
+                    <h1>Contact</h1>
+
+                    <hr />
+
+                    <!--<div class="row">
+                        <div class="col-sm-4 col-sm-offset-4">
+                        <form class="center-block" action="#" method="post">
+                            <div class="form-group">
+                            <label class="sr-only" for="inputName">Full name</label>
+
+                            <input id="inputName" class="form-control" type="text" placeholder="John Doe" required />
+                            </div>
+
+                            <div class="form-group">
+                            <label for="inputMail" class="sr-only">Email Address</label>
+
+                            <input id="inputMail" class="form-control" type="email" placeholder="johndoe@johndoe.com" required />
+                            </div>
+
+                            <div class="form-group">
+                            <label for="inputMessage" class="sr-only">Your Message</label>
+
+                            <textarea id="inputMessage" class="form-control" name="message" cols="30" rows="8" required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                            <button class="btn btn-default center-block" type="submit" value="Contact Me">Contact Me</button>
+                            </div>
+                        </form>
+                        </div>
+                    </div>-->
+                </div>
+                <ul class="soc-media-ul">
+                    <li>
+                    <a rel="icon" href="https://www.linkedin.com/in/abshir-mohamed-661483107/" class="fa fa-linkedin" target="_blank"></a>
+                    </li>
+
+                    <li>
+                    <a href="https://github.com/abshir24" class="fa fa-github" target="_blank"></a>
+                    </li>
+
+                    <li>
+                    <a href="mailto:abshirm@live.com" class="fa fa-envelope"></a>
+                    </li>
+                </ul>
+                <h4><a id="link" href="Resume.pdf">View Resume PDF</a></h4>
+             </section>
+        </div>
+    </body>
+    
+</html>
