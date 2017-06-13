@@ -15,7 +15,7 @@ html {
 
 .profile-pic {
     height: 282px;
-    width: 150px;
+    width: 202px;
     border-radius: 30px;
     position: relative;
 }
@@ -214,7 +214,7 @@ hr {
 
 }
 h4{
-  margin-left:570px;
+  margin-left:650px;
 }
 #link{
   color: white
