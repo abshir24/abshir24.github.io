@@ -2,15 +2,24 @@
 html {
   font-size: 16px;
 }
+.sec-portfolio{
+  padding:0px;
+}
 
 .container{
     color: navy
 }
 
+.col-sm-4{
+  padding-left:40px;
+  padding-right: 0px;
+}
+
 .skills{
     max-height:90px;
     max-width:90px;
-    border-radius: 30px;
+    border-radius: 10px;
+    padding-right:0px;
 }
 
 .profile-pic {
@@ -91,9 +100,7 @@ p {
 .sec-about h1{
   margin: 0px
 }
-.sec-about{
-  padding:0px
-}
+
 
 .sec-services{
     background: url(images.jpg) no-repeat center center;
