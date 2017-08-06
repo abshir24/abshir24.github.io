@@ -78,24 +78,17 @@ p {
 }
 .sec-about img{
   float:right;
+  position:relative;
+  margin-bottom:5%;
 }
-#about-cont{
-  height:384;
-  width:900;
-  margin-left:175px;
-  margin-right:175px;
-  padding:0px 15px 0px 15px;
-}
-#col{
-  margin:0px;
-  height: 282px;
-  width:1105px;
-  padding:0px 15px 0px 15px
-}
+
+
 .sec-about p{
-  margin-left:275px;
-  height: 96px;
-  width:500px;
+  float:right;
+  position:relative;
+  text-align:center;
+  margin:2% 10% 0 0;
+  font-size:20px;
 }
 .sec-about h1{
   margin: 0px
@@ -164,7 +157,9 @@ hr {
 }
 
 /*Header*/
-
+.navbar-brand{
+  float:left;
+}
 .navbar-default {
   background: #fff;
 }
@@ -218,7 +213,7 @@ hr {
 
 }
 h4{
-  margin-left:650px;
+  text-align:center;
 }
 #link{
   color: white
