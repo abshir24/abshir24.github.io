@@ -208,7 +208,7 @@ header {
   width: 100%;
   min-height: auto;
   overflow-y: hidden;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/Users/dogmai24/Desktop/NEXME/landing/img/mainpage.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(img/mainpage.jpg);
 
   background-position: no-repeat center top;
 
