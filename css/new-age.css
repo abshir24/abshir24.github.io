@@ -208,7 +208,7 @@ header {
   width: 100%;
   min-height: auto;
   overflow-y: hidden;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://drive.google.com/open?id=104cPGdEGXA6tbCTL3dW7_qw9QNHhAHj0");
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../img/mainpage.png');
 
   background-position: no-repeat center top;
 
