@@ -1,0 +1,33 @@
+#features {
+	height: 100%;
+	overflow:hidden;
+}
+.device {
+	overflow:hidden;
+}
+.slideshowContainer {
+	overflow: hidden;
+}
+
+.slideshowCaptionContainer {
+	overflow:hidden;
+}
+
+.screenshot {
+	height: 100%;
+	width: 100%;
+	display: block;
+}
+
+.screenshot img {
+	width:100%;
+}
+
+.screen1 {
+}
+.screen2 {
+}
+.screen3 {
+}
+.screen4 {
+}
