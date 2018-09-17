@@ -2,14 +2,6 @@
 	display:none;
 }
 
-#apple{
-	margin-top:-14px;
-}
-
-#extra{
-	padding-top:12px;
-}
-
 @media (min-width: 500px) {
 
 	.main-hero{
@@ -165,7 +157,7 @@ button[type='submit']{
 }
 
 #sellers{
-	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(/Users/dogmai24/Desktop/NEXME/landing/img/nexmephone6.jpg);
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),url('../img/nexmephone6.png');
 
   background-position: no-repeat center top;
 
@@ -350,17 +342,9 @@ button[type='submit']{
 	background: #fff url('../img/brillant.png');
 }
 
-
 .reviews-carousel{
 	width:65%;
 	display:inline-block;
-}
-
-@media (max-width: 766px) {
-	.reviews-carousel{
-		width:100%;
-		display:inline-block;
-	}
 }
 
 .section-control{
@@ -381,6 +365,6 @@ video{
 
 .partners{
 	background-color:#5b5b5b;
-	padding:15px 0 15px 0;
 }
+
 
