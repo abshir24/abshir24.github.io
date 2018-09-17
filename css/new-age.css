@@ -194,13 +194,14 @@ p {
     color: #D52941;
   }
 }
+
 #logo {
   display:block;
-  width:190px;
+  width:180px;
   background-image:url('../img/nexme_logo_red.png');
   background-position: 0 12px;
   background-repeat:no-repeat;
-  background-size:190px;
+  background-size:180px;
 }
 
 header {

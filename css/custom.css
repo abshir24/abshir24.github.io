@@ -2,6 +2,15 @@
 	display:none;
 }
 
+#apple{
+	margin-top:-14px;
+}
+
+#extra{
+	padding-top:12px;
+}
+
+
 @media (min-width: 500px) {
 
 	.main-hero{
@@ -345,6 +354,13 @@ button[type='submit']{
 .reviews-carousel{
 	width:65%;
 	display:inline-block;
+}
+
+@media (max-width: 766px) {
+	.reviews-carousel{
+		width:100%;
+		display:inline-block;
+	}
 }
 
 .section-control{
