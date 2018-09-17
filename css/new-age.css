@@ -3,7 +3,7 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
-.heading-font {
+ .heading-font {
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 500;
   letter-spacing: 1px;
@@ -196,11 +196,11 @@ p {
 }
 #logo {
   display:block;
-  width:190px;
+  width:180px;
   background-image:url('../img/nexme_logo_red.png');
   background-position: 0 12px;
   background-repeat:no-repeat;
-  background-size:190px;
+  background-size:180px;
 }
 
 header {
@@ -208,8 +208,10 @@ header {
   width: 100%;
   min-height: auto;
   overflow-y: hidden;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url('../img/mainpage.png');
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/Users/dogmai24/Desktop/NEXME/landing/img/mainpage.jpg);
+
   background-position: no-repeat center top;
+
 	background-size: cover;
 	
 	color:#ffffff;
