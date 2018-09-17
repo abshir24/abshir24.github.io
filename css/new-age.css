@@ -204,6 +204,18 @@ p {
   background-size:180px;
 }
 
+/* strictly for regular ipad and tablets of that size. not ipad pros */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1000px) {
+  #logo {
+    display:block;
+    width:130px;
+    background-image:url('../img/nexme_logo_red.png');
+    background-position: 0 12px;
+    background-repeat:no-repeat;
+    background-size:130px;
+  }
+}
+
 header {
   position: relative;
   width: 100%;
