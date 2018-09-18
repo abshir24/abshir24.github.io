@@ -12,16 +12,15 @@
 }
 
 
+
 @media (min-width:500px) {
 		.main-hero{
 			float:right;
 		}
 }
 
-@media (max-width:499px) {
-	.main-hero{
-		float:left;
-	}
+.main-hero{
+	padding-right:20px;
 }
 
 .input-group {
