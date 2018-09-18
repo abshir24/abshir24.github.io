@@ -165,12 +165,6 @@ input[type="email"] {
 	width:calc(100% - 80px);
 }
 
-@media (max-width: 500px) {
-
-	.howitworks-content {
-		float:left;
-	}
-}
 .howitworks-content h2 {
 	font-size: 28px;
 	font-weight:400;
