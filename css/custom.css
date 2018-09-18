@@ -13,8 +13,14 @@
 
 @media (min-width: 700px) {
 
-	.main-hero{
-		float:right;
+		.main-hero{
+			float:right;
+		}
+
+		.input-group {
+			margin: 20px auto;
+			width: 100%;
+			float:left;
 	}
 	
 }
