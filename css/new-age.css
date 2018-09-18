@@ -308,6 +308,13 @@ header .device-container .screen img {
 }
 section {
   padding: 45px 0;
+  
+}
+
+@media (max-width: 700px) {
+  section {
+    padding-right:15px;
+  }
 }
 section h2 {
   font-size: 50px;
