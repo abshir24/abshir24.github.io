@@ -17,6 +17,12 @@
 		}
 }
 
+@media (max-width:499px) {
+	.main-hero{
+		float:left;
+	}
+}
+
 .input-group {
     margin: 20px auto;
     width: 100%;
@@ -93,11 +99,11 @@ input[type="email"] {
 		border-radius:2;
 	}
 	button.btn {
-			width: 25%;
+			width: 26%;
 			height: 50px;
 			border-radius:1;
 			background-color: #666666;
-			font-size:14px;
+			font-size:12px;
 			text-transform: none;
 	}
 
