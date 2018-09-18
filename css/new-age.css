@@ -194,12 +194,11 @@ p {
     color: #D52941;
   }
 }
-
 #logo {
   display:block;
   width:180px;
   background-image:url('../img/nexme_logo_red.png');
-  background-position: 0 12px;
+  background-position: 0 5px;
   background-repeat:no-repeat;
   background-size:180px;
 }
@@ -221,8 +220,10 @@ header {
   width: 100%;
   min-height: auto;
   overflow-y: hidden;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url('../img/mainpage.png');
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/Users/dogmai24/Desktop/NEXME/landing/img/mainpage.jpg);
+
   background-position: no-repeat center top;
+
 	background-size: cover;
 	
 	color:#ffffff;
@@ -308,14 +309,10 @@ header .device-container .screen img {
 }
 section {
   padding: 45px 0;
-  
+
+  padding-right:15px;
 }
 
-@media (max-width: 700px) {
-  section {
-    padding-right:15px;
-  }
-}
 section h2 {
   font-size: 50px;
 }

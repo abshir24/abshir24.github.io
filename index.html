@@ -81,18 +81,20 @@
                         <a class="page-scroll" href="#nexme" style="color: #222222;">NEXME</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#buyers" style="color: #222222;">BUYERS</a>
+                        <a class="page-scroll" href="#buyers" style="color: #222222;">Buyers</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#sellers" style="color: #222222;">SELLERS</a>
+                        <a class="page-scroll" href="#sellers" style="color: #222222;">Sellers</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#agents" style="color: #222222;">AGENTS</a>
+                        <a class="page-scroll" href="#mortgage-lenders" style="color: #222222;">Mortgage</a>
+                    <li>
+                        <a class="page-scroll" href="#agents" style="color: #222222;">Agents</a>
                     </li>
-                    <li class="visible-lg visible-xs">
+                    <!-- <li class="visible-lg visible-xs">
                         <a class="page-scroll" href="mailto:info@nexmeapp.com" style="text-transform:lowercase;color: #222222;">info@nexmeapp.com</a>
-                    </li>
-                    <li>
+                    </li> -->
+                    <li class="visible-lg visible-xs">
                         <a class="page-scroll" href="tel:18003908801‬" style="color: #222222;">(800) 390-8801‬</a>
                     </li>
                     <li id="apple">
@@ -110,20 +112,30 @@
     <header>
         <div class="container" id="beta">
             <div class="row">
-                <div class="col-sm-6 main-hero">
+                <div class="col-sm-7 main-hero">
                     <div class="header-content">
                         <div class="header-content-inner">
                             <div id="early-access-view">
-                                <h1 >Buy and sell homes at the click of a button </h1>
+                                <h1 >Buy and sell homes at the click of button </h1>
                                 <div class="form-section">
                                     <p class="header-text">Don't miss out on news from NEXME!</p>
-                                    
+                                    <form action="">
+                                        <div class="embed-submit-field">
+                                            <input type="email" placeholder="Enter your email address" />
+                                            <button type="submit">Subscribe</button>
+                                        </div>
+                                    </form>
                                 </div>
                                 <p class="header-text">FREE for homebuyers and sellers. No hassles, no hidden fees.</p>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="container-fluid info-strip">
+            <div class="col-sm-12 text-center">
+                <p class="header-text">NEXME app is only available on the iOS Apple Store and are operating in the state of Washington. Android coming soon! If you do not have iOS, please email us and we can help you.</p>
             </div>
         </div>
     </header>
@@ -169,21 +181,10 @@
                     <div class="col-md-4" style="margin-left:5%;">
                         <div class="device-container" id="device-gallery-container">
                             <div class="device-mockup iphone6_plus portrait white">
-                                <div class="device slideshowContainer">
-                                    <div class="screen slideshow">
+                                <div class="device">
+                                    <div class="screen">
                                         <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                        <div class="screenshot screen1">
-                                            <img src="img/buyersimage.png" alt="sellers-photo">
-                                        </div>
-                                        <div class="screenshot screen2">
-                                            <img src="img/buyersimage.png" alt="sellers-photo">
-                                        </div>
-                                        <div class="screenshot screen3">
-                                            <img src="img/buyersimage.png" alt="sellers-photo">
-                                        </div>
-                                        <div class="screenshot screen4">
-                                            <img src="img/buyersimage.png" alt="sellers-photo">
-                                        </div>
+                                        <img src="img/buyersimage.png" style="width:100%">
                                     </div>
                                     <div class="button">
                                         <!-- You can hook the "home button" to some JavaScript events or just remove it -->
@@ -225,11 +226,10 @@
                         </div>
                     </div>
                     <div class="col-md-7 section2" style="float:right;">
-                        <img src="img/nexmephone2.jpg" alt="nexmephone">
+                        <img src="/Users/dogmai24/Desktop/NEXME/landing/img/nexmephone2.jpg" alt="nexmephone">
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <section id="sellers" class="scroll-section">
@@ -274,7 +274,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            
         </div>
     </section>
 
@@ -283,8 +283,9 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="section-heading">
-                        <h2>Mortgage lenders</h2>
-                        <h3>Need a pre-approval letter before you go home shopping or looking to refinance? Connect with one of our mortgage lender partners at the click of a button.</h3>
+                        <h2 class="hidden-xs">Mortgage Lenders</h2>
+                        <h3 class="visible-xs" style="font-size:43px;">Mortgage Lenders</h3>
+                        <h3>Need a pre-approval letter before you go home shopping or looking to refinance? Connect with one of our mortgage lender partners at the click of a button. Just click on one of our mortgage lender partners who can provide you with the latest interest rates</h3>
                     </div>
                 </div>
             </div>
@@ -296,10 +297,12 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="section-heading">
-                        <h2>Real Estate Agents</h2>
+                        <h2 class="hidden-xs">Real Estate Agents</h2>
+                        <h3 class="visible-xs" style="font-size:40px;">Real Estate Agents</h3>
                         <h4>NEXME does not hire agents. Real estate agents must hang their license with your current brokerage firm</h4>
                     </div>
                 </div>
+                <!-- for screen sizes smaller than ipad -->
                 <div class="row visible-xs">
                     <div class="col-lg-4 text-center">
                         <img src="img/real_estate_img4.png" class="customer-icons" alt="commission-fee">
@@ -319,10 +322,10 @@
                     </div>
                 </div>
 
-                <!-- end for screen sizes smaller than ipad -->
+                    <!-- end for screen sizes smaller than ipad -->
+
                 <section class="section-white">
                     <div class="container">
-                    
                     <!-- carousel for screen sizes ipad or bigger-->
                         <div id="carousel-example-generic" class="carousel slide hidden-xs" data-ride="carousel">
                         <!-- Indicators -->
@@ -335,7 +338,7 @@
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner">
                             <div class="item active">
-                            <img src="img/real_estate_img1.jpg" alt="..." class="real-estate-img">
+                            <img src="/Users/dogmai24/Desktop/NEXME/landing/img/real_estate_img1.jpg" alt="..." class="real-estate-img">
                             <div class="carousel-caption text-center c-section1 col-sm-5">
                                 <h2 style="margin-bottom:13px;">Become a NEXME agent partner</h2>  
                                 <p style="margin-bottom:13px;">NEXME requires real estate agents to have at least 2 years’ experience and 10 or more listing transactions.</p>
@@ -343,14 +346,14 @@
                             </div>
                             </div>
                             <div class="item">
-                            <img src="img/real_estate_img2.jpg" alt="..." class="real-estate-img">
+                            <img src="/Users/dogmai24/Desktop/NEXME/landing/img/real_estate_img2.jpg" alt="..." class="real-estate-img">
                             
                             <div class="carousel-caption">
                                 <h3>As a NEXME agent partner, do not ask homebuyers to sign a contract with you until they’re ready to make an offer on one particular home. If that home falls through, the contract ends immediately on that home.</h3>
                             </div>
                             </div>
                             <div class="item">
-                                <img src="img/mortgage-lender.jpg" alt="..." class="real-estate-img">
+                                <img src="/Users/dogmai24/Desktop/NEXME/landing/img/mortgage-lender.jpg" alt="..." class="real-estate-img">
                             <div class="carousel-caption">
                                 <h2>Commission</h2> 
                                 <h3>Homebuyers expect up to 2% commission refund from NEXME agent partner at closing.
@@ -388,13 +391,13 @@
                     <!-- Carousel items -->
                     <div class="carousel-inner carousel-zoom">
                         <div class="active item">
-                            <img class="img-responsive" src="img/review1.png" alt="review-images">
+                            <img class="img-responsive" src="/Users/dogmai24/Desktop/NEXME/landing/img/review1.png">
                         </div>
                         <div class="item">
-                            <img class="img-responsive" src="img/review2.png" alt="review-images">
+                            <img class="img-responsive" src="/Users/dogmai24/Desktop/NEXME/landing/img/review2.png">
                         </div>
                         <div class="item">
-                            <img class="img-responsive" src="img/review3.png" alt="review-images">
+                            <img class="img-responsive" src="/Users/dogmai24/Desktop/NEXME/landing/img/review3.png">
                         </div>
                     </div>
                     <!-- Carousel nav -->
@@ -408,13 +411,13 @@
         </div>
     </div>  
     <section class="videos">
-        <div class="row">
+        <div class="row" >
             <div class="col-md-1"></div>
             <div class="col-md-5">
                 <video src="videos/nexme_buyer_seller.mp4"  controls width="100%">
             </div>
             <div class="col-md-5">
-                <video src="videos/nexme_agent_final.mp4"  controls width="100%">
+                <video src="videos/nexme_agent_final.mp4"  controls width="100%" >
             </div>  
         </div>
     </section>
@@ -422,23 +425,29 @@
         <div class="row">
             <div class="col-lg-12 text-left">
                 <div class="section-heading">
-                    <h2>What sets us apart</h2>
+                    <h2 class="hidden-xs">What sets us apart</h2>
+                    <h3 class="visible-xs" style="font-size:40px;">What sets us apart</h3>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-1"></div>
             <div class="col-sm-10">
-                <img class="img-responsive" src="img/whatsetsusapart.png" alt="set-apart" >
+                <img class="img-responsive" src="/Users/dogmai24/Desktop/NEXME/landing/img/whatsetsusapart.png" >
             </div>
         </div>
     </div>
 </section>
-<div class="container-fluid partners" style="padding:15px 0 15px 0">
+<div class="container-fluid partners">
+    <div class="col-lg-12 text-center">
+        <div class="section-heading">
+            <h2 style="color:white">Lender Partner</h2>
+        </div>
+    </div>
     <div class="row">
-        <div class="col-sm-5"></div>
+        <div class="col-sm-4"></div>
         <div class="col-sm-3">
-            <img class="img-responsive" src="img/absolutelogo.png" alt="absolute">
+            <img class="logoimg" src="/Users/dogmai24/Desktop/NEXME/landing/img/absolutelogo.png">
         </div>
     </div>
 </div>

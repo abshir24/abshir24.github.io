@@ -1,7 +1,8 @@
-
 #early-access-success-view {
 	display:none;
 }
+
+/* prevents buyers sellers and nexme section divs from scrolling */
 
 #apple{
 	margin-top:-14px;
@@ -11,52 +12,59 @@
 	padding-top:12px;
 }
 
-
-
-@media (min-width:500px) {
-		.main-hero{
-			float:right;
-		}
-}
-
-.main-hero{
-	padding-right:20px;
-}
-
-.input-group {
-    margin: 20px auto;
-    width: 100%;
-}
-input.btn.btn-lg,
-input.btn.btn-lg:focus {
-    outline: none;
-    width: 100%;
-		height: 70px;
-		border-radius:1;
-}
-button.btn {
-    width: 28%;
-		height: 48px;
-		border-radius:1;
-		background-color: #666666;
-		font-size:17px;
-		text-transform: none;
-}
-
-button.btn:hover{
-	background-color: #fff;
-	color:#666666;
-	border-color: #666666;
-}
-
-input[type="email"] {
-	padding-right: 50px;
-	text-align:left;
+.info-strip{
+	background-color:rgba(18,35,57,.85);
+	padding-top:10px;
 }
 
 
 
+@media (min-width: 700px) {
+	.main-hero{
+		float:right;
+	} 
+}
 
+.form-section{
+	margin-bottom:15px;
+}
+
+.embed-submit-field {
+	position: relative;
+}
+
+input[type="email"]{
+	width: 100%;
+	padding: 15px;
+	padding-bottom:20px;
+	border-radius: 3px;
+	border:0;
+	color:black;
+}
+
+button {
+	position: absolute;
+	right: 10px;
+	top: 7px;
+	/* Only styling from here, you can discard this */
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	
+	border:none;
+	background: #122339;
+	border-radius: 3px;
+	padding: 10px;
+	
+	transition: all .2s;
+	
+	width:25%;
+}
+
+button[type="submit"]:hover{
+	background-color: white;
+	color: black;
+	cursor: pointer;
+}
 .header-text{
 	text-rendering: optimizeLegibility;
   font: 500 16px/1.7 Graphik,sans-serif;
@@ -84,7 +92,6 @@ input[type="email"] {
 }
 
 .steps {
-	overflow:auto;
 	margin: 0 -25px 20px 0;
 	padding:0;
 }
@@ -99,12 +106,10 @@ input[type="email"] {
 .circle-number a {
 	font-weight: 400;
 }
-
 .howitworks-content {
 	float:right;
 	width:calc(100% - 80px);
 }
-
 .howitworks-content h2 {
 	font-size: 28px;
 	font-weight:400;
@@ -154,7 +159,6 @@ input[type="email"] {
 #buyers{
 	border-top: 1px solid #ccc;
 	background: #fff url('../img/brillant.png');
-
 	padding-bottom:0px;
 }
 
@@ -176,8 +180,10 @@ input[type="email"] {
   /* height: auto; */
 }
 
+
+
 #sellers{
-	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),url('../img/nexmephone6.png');
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(/Users/dogmai24/Desktop/NEXME/landing/img/nexmephone6.jpg);
 
   background-position: no-repeat center top;
 
@@ -362,6 +368,7 @@ input[type="email"] {
 	background: #fff url('../img/brillant.png');
 }
 
+
 .reviews-carousel{
 	width:65%;
 	display:inline-block;
@@ -391,7 +398,20 @@ video{
 }
 
 .partners{
-	background-color:#5b5b5b;
+	background-color:#122339;
+	padding:15px 0 15px 0;
 }
+
+.logoimg{
+	width:100%;
+}
+
+@media (max-width: 766px) {
+	.logoimg{
+		width:90%;
+
+	}
+}
+
 
 
