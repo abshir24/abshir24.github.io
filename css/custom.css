@@ -54,7 +54,7 @@ input[type="email"] {
 	text-align:left;
 }
 
-* strictly for regular ipads and ipad pros*/
+/* strictly for regular ipads and ipad pros*/
 @media (min-width: 768px) and (max-width: 1100px){
 	button.btn {
 			width: 30%;
