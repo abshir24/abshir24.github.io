@@ -53,6 +53,7 @@ input[type="email"] {
 	padding-right: 50px;
 	text-align:left;
 }
+
 /* strictly for regular ipads and ipad pros*/
 @media (min-width: 768px) and (max-width: 1100px){
 	button.btn {
@@ -87,6 +88,7 @@ input[type="email"] {
 
 	button[type='submit']{
 		margin-left: -175px;
+		outline:dotted red 2px;
 	}
 }
 
@@ -99,16 +101,16 @@ input[type="email"] {
 		border-radius:2;
 	}
 	button.btn {
-			width: 26%;
+			width: 25%;
 			height: 50px;
 			border-radius:1;
 			background-color: #666666;
-			font-size:12px;
+			font-size:14px;
 			text-transform: none;
 	}
 
 	button[type='submit']{
-		margin-left: -100px;
+		margin-left: -110px;
 	}
 }
 
@@ -117,6 +119,7 @@ input[type="email"] {
 		margin-left: -190px;
 	}
 }
+
 .header-text{
 	text-rendering: optimizeLegibility;
   font: 500 16px/1.7 Graphik,sans-serif;
