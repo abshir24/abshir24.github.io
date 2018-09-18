@@ -86,7 +86,7 @@ input[type="email"] {
 	}
 
 	button[type='submit']{
-		margin-left: -178px;
+		margin-left: -175px;
 	}
 }
 
@@ -99,7 +99,7 @@ input[type="email"] {
 		border-radius:2;
 	}
 	button.btn {
-			width: 24%;
+			width: 26%;
 			height: 50px;
 			border-radius:1;
 			background-color: #666666;
@@ -214,6 +214,7 @@ input[type="email"] {
 #buyers{
 	border-top: 1px solid #ccc;
 	background: #fff url('../img/brillant.png');
+
 	padding-bottom:0px;
 }
 
