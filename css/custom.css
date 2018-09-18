@@ -11,13 +11,13 @@
 }
 
 
-@media (min-width: 500px) {
+@media (max-width: 700px) {
 
 	.main-hero{
-		float:right;
+		float:left;
 	}
 	
-  }
+}
 
 .input-group {
     margin: 20px auto;
@@ -156,9 +156,17 @@ input[type="email"] {
 .circle-number a {
 	font-weight: 400;
 }
+
 .howitworks-content {
 	float:right;
 	width:calc(100% - 80px);
+}
+
+@media (max-width: 500px) {
+
+	.howitworks-content {
+		float:left;
+	}
 }
 .howitworks-content h2 {
 	font-size: 28px;
