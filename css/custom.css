@@ -183,7 +183,7 @@ button[type="submit"]:hover{
 
 
 #sellers{
-	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(/Users/dogmai24/Desktop/NEXME/landing/img/nexmephone6.jpg);
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url('../img/nexmephone6.png');
 
   background-position: no-repeat center top;
 
