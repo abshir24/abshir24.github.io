@@ -220,7 +220,7 @@ header {
   width: 100%;
   min-height: auto;
   overflow-y: hidden;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../img/mainpage.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../img/mainpage.png');
 
   background-position: no-repeat center top;
 
