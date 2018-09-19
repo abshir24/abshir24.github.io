@@ -147,7 +147,7 @@ p {
 .navbar-default .nav > li.active > a,
 .navbar-default .nav > li.active > a:focus {
   background-color: transparent;
-  color: rgba(255, 255, 255, 0.7);
+  color: #222222;
 }
 .navbar-default .nav > li.active > a:hover,
 .navbar-default .nav > li.active > a:focus:hover {
@@ -160,7 +160,7 @@ p {
     border-color: rgba(34, 34, 34, 0.1);
   }
   .navbar-default .navbar-header .navbar-brand {
-    color: rgba(255, 255, 255, 0.7);
+    color: #222222;
   }
   .navbar-default .navbar-header .navbar-brand:hover,
   .navbar-default .navbar-header .navbar-brand:focus {
@@ -254,7 +254,7 @@ header .header-content .header-content-inner {
 .header-content-subtitle {
   font-size: 30px;
   margin-bottom: 20px;
-  color: rgba(255, 255, 255, 0.7);
+  color: #222222;
 }
 header .header-content .header-content-inner h1 {
   margin-top: 0;
