@@ -125,10 +125,10 @@ p {
   color: #D52941;
 }
 .navbar-default .navbar-header .navbar-toggle {
-  font-size: 22px;
+  font-size: 20px;
   color: #222222;
   border: none;
-  padding: 8px 10px;
+  padding: 0 10px 0 10px;
 }
 .navbar-default .nav > li > a {
   font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
