@@ -96,8 +96,8 @@ button[type="submit"]:hover{
 }
 
 .steps {
-	margin: 0 -25px 20px 0;
-	padding:0;
+	margin: 0 0 20px 0;
+	padding-right:10px;
 }
 .steps .circular-number {
 	float:left;
@@ -436,10 +436,7 @@ video{
 	}
 }
 
-/* extends padding to the text so that it doesn't go past margins */
-.extend-pad{
-	padding-right:15px;
-}
+
 
 
 
