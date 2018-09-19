@@ -97,7 +97,7 @@ button[type="submit"]:hover{
 
 .steps {
 	margin: 0 0 20px 0;
-	padding-right:10px;
+	padding:0;
 }
 .steps .circular-number {
 	float:left;

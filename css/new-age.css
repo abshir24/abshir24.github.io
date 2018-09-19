@@ -385,7 +385,7 @@ section.download .badges .badge-link img {
   margin: 5px 0 -10px 0;
 }
 .howitworks-content {
-  text-align: left;
+  /* text-align: left; */
 }
 .howitworks-content h3 {
   margin:0;
