@@ -17,6 +17,10 @@
 	padding-top:10px;
 }
 
+.sub-title{
+	font-size:40px;
+}
+
 
 
 @media (min-width: 700px) {
@@ -162,6 +166,14 @@ button[type="submit"]:hover{
 	padding-bottom:0px;
 }
 
+#phone{
+	margin-left:5%;
+}
+
+.slideshowCaptionContainer{
+	float:right;
+}
+
 .steps{
 	margin-bottom:30px;
 }
@@ -284,6 +296,15 @@ button[type="submit"]:hover{
 	background-image: none;
 }
 
+.agent-text{
+	margin-bottom:13px;
+}
+
+.agent-partner{
+	margin-bottom:13px;
+}
+
+
 .c-section1 h2{
 	font-size:30px;
 }
@@ -373,6 +394,8 @@ button[type="submit"]:hover{
 	width:65%;
 	display:inline-block;
 }
+
+
 
 @media (max-width: 766px) {
 	.reviews-carousel{
