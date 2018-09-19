@@ -32,7 +32,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #D52941;
+  color: #122339;
 }
 hr {
   max-width: 100px;
@@ -428,7 +428,7 @@ ul.list-social li a {
 }
 
 footer {
-  background-color:#cdd2d5;
+  background-color:#ebebeb;
   padding: 50px 0px;
   color: #5b5b5b;
   text-align: center;
