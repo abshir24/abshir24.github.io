@@ -129,6 +129,7 @@ p {
   color: #222222;
   border: none;
   padding: 8px 10px;
+  margin-right:0px;
 }
 .navbar-default .nav > li > a {
   font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
@@ -313,8 +314,6 @@ header .device-container .screen img {
 }
 section {
   padding: 45px 0;
-
-  padding-right:15px;
 }
 
 section h2 {
