@@ -1,502 +1,213 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+    <head>
+        <title>Abshir's Portfolio</title>
+        <meta name = "keywords" content ="Abshir Portfolio">
+        <meta name = "description" content = "Abshir's Portfolio">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="css/bootstrap-responsive.css">
+        <script>
+            $(function() {
+                $('.js-nav a, .js-connect').click(function(e) {
+                    e.preventDefault();
+                    $('body, html').animate({
+                    scrollTop: $($.attr(this, 'href')).offset().top
+                    }, 750);
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header role="header">
+                <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse" role="button">
+                                <span class="sr-only">Toggle Navigation</span>
+                                
+                                <span class="icon-bar"></span>
+                                
+                                <span class="icon-bar"></span>
+                                
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a href="#" class="navbar-brand">Abshir</a>
+                        </div>
 
-<head>
+                        <div class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav navbar-right js-nav">
+                                <li><a href="#home">Home</a></li>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+                                <li><a href="#portfolio">Portfolio</a></li>
 
-    <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="img/icons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/icons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/icons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/icons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/icons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/icons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="img/icons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="img/icons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+                                <li><a href="#services">Skills</a></li>
 
-    <title>NEXME - Real Estate on Demand</title>
+                                <li><a href="#about">About</a></li>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <section id="home" class="sec-main">
+                <h1 class="main-heading">Permanent Beta</h1>
+            </section>
+            <hr />
+            <section id="portfolio" class="sec-portfolio">
+                <div class="container">
+                <h1>Portfolio</h1>
+                <p style="text-align:center;">Click on projects to view website || code on GitHub</p>
+                <hr/>
 
-    <!-- Custom Fonts -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
-    <link href='css/devicons.min.css' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
-    <link rel="stylesheet" href="vendor/device-mockups/device-mockups.min.css">
-
-    <!-- Theme CSS -->
-    <link href="css/new-age.css" rel="stylesheet">
-    <!-- Device Gallery CSS -->
-    <link href="css/device-gallery.css" rel="stylesheet">
-    <!-- Minor Customization CSS -->
-    <link rel="stylesheet" href="css/custom.css">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-  <![endif]-->
-
-</head>
-
-<body id="page-top">
-
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container"  id="extra">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                    
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top" id="logo" ></a>
-                
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#nexme">NEXME</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#buyers" >Buyers</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#sellers" >Sellers</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#mortgage-lenders" >Mortgage</a>
-                    <li>
-                        <a class="page-scroll" href="#agents" >Agents</a>
-                    </li>
-                    <li class="visible-lg visible-xs">
-                        <a class="page-scroll" href="mailto:info@nexmeapp.com" style="text-transform:lowercase;">info@nexmeapp.com</a>
-                    </li>
-                    <li class="visible-lg visible-xs">
-                        <a class="page-scroll" href="tel:18003908801‬">(800) 390-8801‬</a>
-                    </li>
-                    <li id="apple">
-                        <a class="page-scroll" href="https://itunes.apple.com/us/app/nexme/id1325407208?mt=8" target="_blank">
-                            <img src="img/App_Store.png" width="160">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="https://github.com/codingninja84/klinefelter">
+                            <img class="center-block" src="klinehome.png" />
                         </a>
+                    </div>
+
+                    <div class="col-md-4">
+                        <a href="https://github.com/codingninja84/klinefelter">
+                            <img class="center-block" src="klinemid.png"/>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4">
+                        <a href="https://github.com/codingninja84/klinefelter">
+                            <img class="center-block" src="klinefoot.png"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="https://www.cecreditsonline.org/">
+                            <img class="center-block" src="CeHome.png"/>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4">
+                        <a href="https://www.cecreditsonline.org/">
+                            <img class="center-block" src="Ce2.png"/>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4">
+                        <a href="https://www.cecreditsonline.org/">
+                            <img class="center-block" src="Ce3.png"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="https://www.cecreditsonline.org/">
+                            <img class="center-block" src="courses.png"/>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4">
+                        <a href="https://www.cecreditsonline.org/">
+                            <img class="center-block" src="laptop.png"/>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4">
+                        <a href="https://www.cecreditsonline.org/">
+                            <img class="center-block" src="map.png"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="https://github.com/abshir24/MyAdvice">
+                            <img class="center-block" src="myadvicelogin.png" />
+                        </a>
+                    </div>
+
+                    <div class="col-md-4">
+                        <a href="https://github.com/abshir24/MyAdvice">
+                            <img class="center-block" src="myadviceaskpage.png"/>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4">
+                        <a href="https://github.com/abshir24/MyAdvice">
+                            <img class="center-block" src="AskPage.png"/>
+                        </a>
+                    </div>
+                </div>
+                </div>
+            </section>
+            <section id="services" class="sec-services">
+                <div class="container">
+                    <h1>Technologies</h1>
+
+                    <hr />
+
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="hcj.png" class="skills">
+                            <img src="csharp.jpg" class="skills">
+                            <img src="python.png" class="skills">
+                            <h2 class="h3">Languages</h2>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <img src="angular.jpg" class="skills">
+                            <img src="aspnet.jpg" class="skills">
+                            <img src="django.jpg" class="skills">
+                            <h2 class="h3">Frameworks</h2>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <img src="mongodb.png" class="skills">
+                            <img src="sqllite.jpg" class="skills">
+                            <img src="mysql-database.png" class="skills">
+                            <h2 class="h3">Databases</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+             <section id="about" class="sec-about">
+                <div class="container">
+                    <h1>About me</h1>
+                    <hr />
+                    <div class="row">
+                        <img class = "profile-pic" src="Abshir1.jpg" class="img-round"></img>
+                            <p class="col-sm-6">Hello my name is Abshir Mohamed! I am a software developer who is based out of the Greater Seattle Area.
+                                I enjoy solving challenging problems and utilizing my creativity as a developer.
+                                Feel free to contact me down below if you have any questions!
+                            </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="sec-contact">
+                <div class="container">
+                    <h1>Contact</h1>
+
+                    <hr />
+                </div>
+                <ul class="soc-media-ul">
+                    <li>
+                    <a rel="icon" href="https://www.linkedin.com/in/abshir-mohamed-661483107/" class="fa fa-linkedin" target="_blank"></a>
+                    </li>
+
+                    <li>
+                    <a href="https://github.com/abshir24" class="fa fa-github" target="_blank"></a>
+                    </li>
+
+                    <li>
+                    <a href="mailto:abshirm@live.com" class="fa fa-envelope"></a>
                     </li>
                 </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+                <h4><a id="link" href="Abshir_Mohamed_Resume.pdf">View Resume PDF</a></h4>
+             </section>
         </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-    <header>
-        <div class="container" id="beta">
-            <div class="row">
-                <div class="col-sm-7 main-hero">
-                    <div class="header-content">
-                        <div class="header-content-inner">
-                            <div id="early-access-view">
-                                <h1 >Buy and sell homes at the click of a button</h1>
-                                <div class="form-section">
-                                    <p class="header-text">Don't miss out on news from NEXME!</p>
-                                    <form action="">
-                                        <div class="embed-submit-field">
-                                            <input type="email" placeholder="Enter your email address" />
-                                            <button type="submit">Subscribe</button>
-                                        </div>
-                                    </form>
-                                </div>
-                                <p class="header-text">FREE for homebuyers and sellers. No hassles, no hidden fees.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid info-strip">
-            <div class="col-sm-12 text-center">
-                <p class="header-text">NEXME app is only available on the iOS Apple Store and operating in the state of Washington. Android is coming soon! If you do not have iOS, please email us and we can help you.</p>
-            </div>
-        </div>
-    </header>
-
-    <section id="nexme">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <div class="section-heading nexmesection">
-                            <h2>NEXME in a few simple steps</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <img src="img/nexmeicon1.png" class="customer-icons" alt="commission-fee"> 
-                        <p class="description-text">Your NEXME agent partner commits to 1% commission fee</p>
-                    </div>
-                    <div class="col-lg-4 ">
-                        <img src="img/nexmeicon2.png" class="customer-icons" alt="partner"> 
-                        <p class="description-text">Homebuyers get 2% money back from NEXME agent partner at closing</p>
-                    </div>
-                    <div class="col-lg-4">
-                        <img src="img/nexmeicon3.png" class="customer-icons" alt="cost-effective"> 
-                        <p class="description-text">Request an agent as many times as you want, for FREE!</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    <section id="buyers" class="scroll-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="section-heading">
-                        <h2>NEXME for homebuyers</h2>
-                        <h4 style="padding-right:20px;">Homebuyers want everything at the click of a button</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="row">
-                    <div class="col-md-4 " id="phone">
-                        <div class="device-container" id="device-gallery-container">
-                            <div class="device-mockup iphone6_plus portrait white">
-                                <div class="device">
-                                    <div class="screen">
-                                        <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                        <img src="img/buyersimage.png">
-                                    </div>
-                                    <div class="button">
-                                        <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-7 slideshowCaptionContainer">
-                        <div class="container-fluid" >
-                            <div class="steps">
-                                    
-                                <div class="fa-stack fa-2x circle-number" >
-                                    <i class="fa fa-circle-thin fa-stack-2x"></i>
-                                    <a class="fa-stack-1x fa-stack-text">1</a>
-                                </div>
-                                <div class="howitworks-content ">
-                                    <h3>Request an agent INSTANTLY</h3>
-                                </div>
-                            </div>
-                            <div class="steps row">
-                                <div class="fa-stack fa-2x circle-number">
-                                    <i class="fa fa-circle-thin fa-stack-2x"></i>
-                                    <a class="fa-stack-1x fa-stack-text">2</a>
-                                </div>
-                                <div class="howitworks-content">
-                                    <h3>See a home with a full service agent. On your time, on your terms</h3>
-                                </div>
-                            </div>
-                            <div class="steps row">
-                                    <div class="fa-stack fa-2x circle-number">
-                                        <i class="fa fa-circle-thin fa-stack-2x"></i>
-                                        <a class="fa-stack-1x fa-stack-text">3</a>
-                                    </div>
-                                    <div class="howitworks-content">
-                                        <h3>Make an offer. NO CONTRACT, NO COMMITMENT until you are ready to make an offer with a NEXME agent partner</h3>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-7 section2">
-                        <img src="img/nexmephone2.jpg" alt="nexmephone">
-                    </div>
-                </div>
-            </div>
-    </section>
-
-    <section id="sellers" class="scroll-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-left">
-                    <div class="section-heading">
-                        <h2>NEXME for home sellers</h2>
-                        <h4>Sell your home in a few simple steps</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-5">
-                    <div class="container-fluid">
-                        <div class="steps">  
-                            <div class="fa-stack fa-2x circle-number" >
-                                <i class="fa fa-circle-thin fa-stack-2x"></i>
-                                <a class="fa-stack-1x fa-stack-text">1</a>
-                            </div>
-                            <div class="howitworks-content">
-                                <h3>List your home at 1% comission fee</h3>
-                            </div>
-                        </div>
-                        <div class="steps row">
-                            <div class="fa-stack fa-2x circle-number">
-                                <i class="fa fa-circle-thin fa-stack-2x"></i>
-                                <a class="fa-stack-1x fa-stack-text">2</a>
-                            </div>
-                            <div class="howitworks-content">
-                                <h3>NO CONTRACT, NO COMMITMENT until you are ready to list with a NEXME agent partner</h3>
-                            </div>
-                        </div>
-                        <div class="steps row">
-                                <div class="fa-stack fa-2x circle-number">
-                                    <i class="fa fa-circle-thin fa-stack-2x"></i>
-                                    <a class="fa-stack-1x fa-stack-text">3</a>
-                                </div>
-                                <div class="howitworks-content">
-                                    <h3>Request an agent as many times as you want, for FREE!</h3>
-                                </div>
-                        </div>
-                    </div>
-                </div>
-            
-        </div>
-    </section>
-
-    <section id="mortgage-lenders" class="scroll-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="section-heading">
-                        <h2 class="hidden-xs">Mortgage Lenders</h2>
-                        <h3 class="visible-xs sub-title">Mortgage Lenders</h3>
-                        <h3 class="extend-pad">Need a pre-approval letter before you go home shopping or looking to refinance? Connect with one of our mortgage lender partners at the click of a button. Just click on one of our mortgage lender partners who can provide you with the latest interest rates.</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="agents" class="scroll-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="section-heading">
-                        <h2 class="hidden-xs">Real Estate Agents</h2>
-                        <h3 class="visible-xs sub-title">Real Estate Agents</h3>
-                        <h4 class="extend-pad">NEXME does not hire agents. Real estate agents must hang their license with your current brokerage firm</h4>
-                    </div>
-                </div>
-                <!-- for screen sizes smaller than ipad -->
-                <div class="row visible-xs">
-                    <div class="col-lg-4 text-center">
-                        <img src="img/real_estate_img4.png" class="customer-icons" alt="commission-fee">
-                        <h3 class="agent-text">Become a NEXME agent partner</h3>  
-                        <p class="description-text agent-text" >NEXME requires real estate agents to have at least 2 years’ experience and 10 or more listing transactions.</p>
-                        <p class="description-text">By signing up, real estate agents are committing to 1% commission fee, no exceptions.</p> 
-                    </div>
-                    <div class="col-lg-4 text-center">
-                        <img src="img/real_estate_img6.png" class="customer-icons" alt="partner"> 
-                        <p class="description-text">As a NEXME agent partner, do not ask homebuyers to sign a contract with you until they’re ready to make an offer on one particular home. If that home falls through, the contract ends immediately on that home.</p>
-                    </div>
-                    <div class="col-lg-4 text-center">
-                        <img src="img/real_estate_img5.png" class="customer-icons" alt="cost-effective"> 
-                        <h3>Commission</h3> 
-                        <p class="description-text">Homebuyers expect up to 2% commission refund from NEXME agent partner at closing.
-                        Home sellers list their home at 1% commission fee.</p>
-                    </div>
-                </div>
-
-                    <!-- end for screen sizes smaller than ipad -->
-
-                <section class="section-white">
-                    <div class="container">
-                    <!-- carousel for screen sizes ipad or bigger-->
-                        <div id="carousel-example-generic" class="carousel slide hidden-xs" data-ride="carousel">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators ">
-                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                        </ol>
-                    
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
-                            <div class="item active">
-                            <img src="img/real_estate_img1.jpg" alt="..." class="real-estate-img">
-                            <div class="carousel-caption text-center c-section1 col-sm-5">
-                                <h2 class="agent-partner" >Become a NEXME agent partner</h2>  
-                                <p class="agent-partner">NEXME requires real estate agents to have at least 2 years’ experience and 10 or more listing transactions.</p>
-                                <p>By signing up, real estate agents are committing to 1% commission fee, no exceptions.</p>
-                            </div>
-                            </div>
-                            <div class="item">
-                            <img src="img/real_estate_img2.jpg" alt="..." class="real-estate-img">
-                            
-                            <div class="carousel-caption">
-                                <h3>As a NEXME agent partner, do not ask homebuyers to sign a contract with you until they’re ready to make an offer on one particular home. If that home falls through, the contract ends immediately on that home.</h3>
-                            </div>
-                            </div>
-                            <div class="item">
-                                <img src="img/mortgage-lender.jpg" alt="..." class="real-estate-img">
-                            <div class="carousel-caption">
-                                <h2>Commission</h2> 
-                                <h3>Homebuyers expect up to 2% commission refund from NEXME agent partner at closing.
-                                Home sellers list their home at 1% commission fee</h3>
-                            </div>
-                            </div>
-                        </div>
-                    
-                        <!-- Controls -->
-                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left"></span>
-                        </a>
-                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right"></span>
-                        </a>
-                    </div>
-
-                    <!-- end for screen sizes ipad or bigger -->
-                      
-                    </div>
-                </section>
-            </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-                <div class="col-sm-2" ></div>
-                <div id="carousel" class="carousel slide carousel-fade reviews-carousel" data-ride="carousel" >
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators review-indicators" >
-                        <li data-target="#carousel" data-slide-to="0" class="active" style="background-color:#939393;"></li>
-                        <li data-target="#carousel" data-slide-to="1" style="background-color:#939393;"></li>
-                        <li data-target="#carousel" data-slide-to="2" style="background-color:#939393;"></li>
-                    </ol>
-                    <!-- Carousel items -->
-                    <div class="carousel-inner carousel-zoom">
-                        <div class="active item">
-                            <img class="img-responsive" src="img/review1.png">
-                        </div>
-                        <div class="item">
-                            <img class="img-responsive" src="img/review2.png">
-                        </div>
-                        <div class="item">
-                            <img class="img-responsive" src="img/review3.png">
-                        </div>
-                    </div>
-                    <!-- Carousel nav -->
-                    <a class="left carousel-control section-control" href="#carousel" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                    </a>
-                    <a class="right carousel-control dividers section-control" href="#carousel" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
-                </div>
-        </div>
-    </div>  
-    <section class="videos">
-        <div class="row" >
-            <div class="col-md-1"></div>
-            <div class="col-md-5">
-                <video src="videos/nexme_buyer_seller.mp4"  controls width="100%">
-            </div>
-            <div class="col-md-5">
-                <video src="videos/nexme_agent_final.mp4"  controls width="100%" >
-            </div>  
-        </div>
-    </section>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-left">
-                <div class="section-heading">
-                    <h2 class="hidden-xs">What sets us apart</h2>
-                    <h3 class="visible-xs sub-title" >What sets us apart</h3>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-1"></div>
-            <div class="col-sm-10">
-                <img class="img-responsive" src="img/whatsetsusapart.png" >
-            </div>
-        </div>
-    </div>
-</section>
-<div class="container-fluid partners">
-    <div class="row">
-        <div class="col-sm-4 text-center" style="color:white">
-            <h2>Lender Partner</h2>
-        </div>
-        <div class="col-sm-3">
-            <img class="logoimg" src="img/absolutelogo.png">
-        </div>
-    </div>
-</div>
-    <footer>
-        <div class="container">
-            <ul class="list-inline list-social" >
-                <li>
-                    <a href="https://twitter.com/nexmeapp" target="_blank"><i class="fa fa-twitter"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/nexmeapp" target="_blank"><i class="fa fa-instagram"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/NEXMEapp" target="_blank"><i class="fa fa-facebook"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/company-beta/17972514/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                </li>
-                <li>
-                    <a href="mailto:info@nexmeapp.com"><i class="fa fa-envelope"></i></a>
-                </li>
-            </ul>
-        </div>
-        <p class="contact">@nexmeapp&nbsp;&nbsp;|&nbsp;&nbsp;<a href="mailto:info@nexmeapp.com">info@nexmeapp.com</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="tel:18003908801‬">(800) 390-8801‬</a></p>
-        <br/>
-
-        <a class="contact" href="privacy/">Privacy</a>&nbsp;|&nbsp;<a class="contact" href="FAQ/">FAQ</a>&nbsp;|&nbsp;<a class="contact" href="terms-of-use/">Terms & Conditions</a>
-        <p>&copy; 2018 NEXME All Rights Reserved.</p>
-        
-    </footer>
-
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/new-age.min.js"></script>
-    <script src="js/animation.js"></script>
-    <script src="js/scrollanimations.js"></script>
-
-    <!-- Form Submission Javascript-->
-    <script src="js/early-access.js"></script>
-    <script src="js/jquery.visible.min.js"></script>
-
-</body>
-
+    </body>
+    
 </html>
