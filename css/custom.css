@@ -436,5 +436,10 @@ video{
 	}
 }
 
+/* extends padding to the text so that it doesn't go past margins */
+.extend-pad{
+	padding-right:15px;
+}
+
 
 
