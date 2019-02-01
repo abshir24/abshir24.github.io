@@ -77,6 +77,7 @@
 
    }
 
+
 })();
 
 //Smooth Scroll
@@ -105,28 +106,6 @@ SmoothScroll({
    excluded          : ''    
 });
 
-// Google Maps
-var myCenter = new google.maps.LatLng(9.9150603, 122.8321918);
-
-function initialize() {
- var mapProp = {
-   center: myCenter,
-   zoom: 12,
-   scrollwheel: false,
-   draggable: false,
-   mapTypeId: google.maps.MapTypeId.ROADMAP
- };
-
- var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-
- var marker = new google.maps.Marker({
-   position: myCenter,
- });
-
- marker.setMap(map);
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
 
 // Modal Image Gallery
 function onClick(element) {
@@ -147,3 +126,16 @@ function myFunction() {
    navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
  }
 }
+
+
+$(document).ready(function(){
+    $('.chart').easyPieChart({
+        scaleColor: "#ecf0f1",
+        lineWidth: 20,
+        lineCap: 'butt',
+        barColor: '#1abc9c',
+        trackColor:	"#ecf0f1",
+        size: 160,
+        animate: 500
+      });
+})
