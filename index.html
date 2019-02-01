@@ -9,36 +9,49 @@
         <meta name="author" content="">
         <title>Abshir Mohamed - Unity and Progress</title>
         <link href="https://www.w3schools.com/lib/w3.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
         <link href="./index.css" rel="stylesheet">
     </head>
     <body>
-        <div class="w3-top">
-            <ul class="w3-navbar" id="myNavbar">
-            <li><a href="#" class="w3-padding-large">Abshir</a></li>
-            <li class="w3-hide-small w3-right">
-                <a href="#contact" class="w3-padding-large">Contact</a>
-            </li>
-            <li class="w3-hide-small w3-right">
-                <a href="#portfolio" class="w3-padding-large">Portfolio</a>
-            </li>
-            <li class="w3-hide-small w3-right">
-                <a href="#about" class="w3-padding-large">About</a>
-            </li>
-            </ul>
-        </div>
+        <header>
+            <nav id="navigation" class="navbar navbar-fixed-top">
+                <div class="container" style="padding-left:4px;">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse" role="button">
+                            <span class="sr-only">Toggle Navigation</span>
+                            
+                            <span class="icon-bar"></span>
+                            
+                            <span class="icon-bar"></span>
+                            
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="#" class="navbar-brand">Abshir</a>
+                    </div>
+    
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right js-nav">
+                            <li class="aScroll"><a href="#about">About</a></li>
+                            <li class="aScroll"><a href="#skills">Skills</a></li>
+                            <li class="aScroll"><a href="#portfolio">Portfolio</a></li>
+                            <li class="aScroll"><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>		
+            </nav>     
+        </header>
         
         <!-- First Parallax Image with Logo Text -->
         <div class="bgimg-1 w3-opacity w3-display-container">
             <div class="w3-display-middle" style="white-space:nowrap;">
-            <h1 class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">Abshir <span class="w3-hide-small">Mohamed</span></h1>
+                <h1 class="w3-center w3-padding-xlarge w3-white w3-xlarge w3-wide w3-animate-opacity">Abshir <span class="w3-hide-small">Mohamed</span></h1>
             </div>
         </div>
         
         <!-- Container (About Section) -->
         <div class="w3-content w3-container w3-padding-64" id="about">
             <h2 class="w3-center">ABOUT ME</h2>
-            <p class="w3-center"><em>I love Programming</em></p>
             <p>
                 Hello my name is Abshir Mohamed! I am a software developer who is based out of the Greater Seattle Area.
                 I believe that Life grants us nothing without hard-work. 
@@ -48,16 +61,22 @@
             </p>
         </div>
 
-        <div class="container">
-                <h1>Flat Skills charts with "Easy Pie chart"</h1>
-                <div class="chart" data-percent="80">HTML5</div>
-                <div class="chart" data-percent="30">CSS3</div>
-                <div class="chart" data-percent="60">SASS</div>
-                <div class="chart" data-percent="50">jQuery</div>
-                <div class="chart" data-percent="11">AngularJS</div>
-                  <div class="chart" data-percent="20">BackboneJS</div>
-                <div class="chart" data-percent="30">NodeJS</div>
-                <div class="chart" data-percent="60">PHP</div>
+        <div class="w3-container w3-center" id="skills">
+            <h2 class="w3-center">Skills</h2>
+            <div class="w3-row-padding " >
+                <div class="w3-col m10" style="outline:dotted red 2px;">
+                    <div class="chart" data-percent="90">HTML5</div>
+                    <div class="chart" data-percent="85">CSS3</div>
+                    <div class="chart" data-percent="50">SASS</div>
+                    <div class="chart" data-percent="50">jQuery</div>
+                    <div class="chart" data-percent="35">Angular 4</div>
+                    <div class="chart" data-percent="40">NodeJS</div>
+                    <div class="chart" data-percent="65">Java</div>
+                    <div class="chart" data-percent="70">JavaScript</div>
+                    <div class="chart" data-percent="35">C++</div>
+                    <div class="chart" data-percent="50">Python</div>
+                </div>
+            </div>
         </div>
         
         <!-- Second Parallax Image with Portfolio Text -->
@@ -126,23 +145,23 @@
         <!-- Container (Contact Section) -->
         <div class="w3-content w3-container w3-padding-64">
             <address class="w3-row w3-padding-32 w3-section">
-                    <div class="w3-col m6 w3-container">
-                        <img src="selfie.jpg" id="profile" class="w3-round-large" alt="selfie">
-                    </div>
+                <div class="w3-col m6 w3-container">
+                    <img src="selfie.jpg" id="profile" class="w3-round-large" alt="selfie">
+                </div>
                 <div class="w3-col m6 w3-container w3-section">
                     <div class="w3-large w3-margin-bottom">
-                    <i class="fa fa-map-marker w3-hover-text-black" style="width:30px"></i> Seattle, WA<br>
-                    <i class="fa fa-phone w3-hover-text-black" style="width:30px"></i> Phone: 206-488-6790<br>
-                    <i class="fa fa-envelope w3-hover-text-black" style="width:30px"> </i> Email: abshirm@live.com<br>
+                        <i class="fa fa-map-marker w3-hover-text-black" style="width:30px"></i> Seattle, WA<br>
+                        <i class="fa fa-phone w3-hover-text-black" style="width:30px"></i> Phone: 206-488-6790<br>
+                        <i class="fa fa-envelope w3-hover-text-black" style="width:30px"> </i> Email: abshirm@live.com<br>
                     </div>
                     <p>If you would like to get in contact with me please leave a note!</p>
                     <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-                    <div class="w3-half">
-                        <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Name">
-                    </div>
-                    <div class="w3-half">
-                        <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Email">
-                    </div>
+                        <div class="w3-half">
+                            <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Name">
+                        </div>
+                        <div class="w3-half">
+                            <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Email">
+                        </div>
                     </div>
                     <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Comment">
                     <a href="mailto:abshirm@live.com" class="w3-btn w3-section w3-right">SEND</a>

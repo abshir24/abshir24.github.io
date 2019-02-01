@@ -114,28 +114,41 @@ function onClick(element) {
 }
 
 // Change style of navbar on scroll
-window.onscroll = function() {
- myFunction()
+$('#skills').onscroll = function() {
+    
 };
 
-function myFunction() {
- var navbar = document.getElementById("myNavbar");
- if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-   navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-white";
- } else {
-   navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
- }
-}
+$(function () {
+    $(document).scroll(function () {
+        var $nav = $(".navbar-fixed-top");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+      });
+});
 
 
 $(document).ready(function(){
-    $('.chart').easyPieChart({
-        scaleColor: "#ecf0f1",
-        lineWidth: 20,
-        lineCap: 'butt',
-        barColor: '#1abc9c',
-        trackColor:	"#ecf0f1",
-        size: 160,
-        animate: 500
-      });
+
+    $('.aScroll').click(function(){
+        $('.chart').easyPieChart({
+            scaleColor: "#ecf0f1",
+            lineWidth: 20,
+            lineCap: 'butt',
+            barColor: '#1abc9c',
+            trackColor:	"#ecf0f1",
+            size: 160,
+            animate:1300
+        });
+    })
+    $('#about').mouseenter(function(){
+        $('.chart').easyPieChart({
+            scaleColor: "#ecf0f1",
+            lineWidth: 20,
+            lineCap: 'butt',
+            barColor: '#1abc9c',
+            trackColor:	"#ecf0f1",
+            size: 160,
+            animate:1300
+        });
+    })
+    
 })

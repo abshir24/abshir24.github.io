@@ -5,10 +5,17 @@ body, html {
     line-height: 1.8;
 }
 
+
 /*Navbar Styles*/
-.w3-navbar { color: #fff; }
-.w3-navbar.w3-animate-top { color: #444; }
-.w3-navbar li a:hover { background-color: rgba(0,0,0,0.2); color: #fff; }
+.navbar-fixed-top.scrolled {
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+   
+}
+  
+.navbar-fixed-top.scrolled .nav-link {
+    color:#555;
+}
 
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -40,12 +47,6 @@ body, html {
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
 
-#googleMap {
-    width: 100%;
-    height: 400px;
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1);
-}
 
 /* Turn off parallax scrolling for tablets and mobiles */
 @media only screen and (max-width: 1024px) {
