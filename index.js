@@ -77,8 +77,30 @@
 
    }
 
+    var x = window.matchMedia("(max-width: 700px)")
+    myFunction(x) // Call listener function at run time
+    x.addListener(myFunction) // Attach listener function on state changes
 
 })();
+
+function myFunction(x) {
+    if (x.matches) { // If media query matches
+        $('.chart').easyPieChart({
+            scaleColor: "#ecf0f1",
+            lineWidth: 20,
+            lineCap: 'butt',
+            barColor: '#26c2c0',
+            trackColor:	"#ecf0f1",
+            size: 160,
+            animate:1300
+        });
+    } 
+}
+  
+  var x = window.matchMedia("(max-width: 700px)")
+  myFunction(x) // Call listener function at run time
+  x.addListener(myFunction) // Attach listener function on state changes
+
 
 //Smooth Scroll
 SmoothScroll({
@@ -126,6 +148,8 @@ $(function () {
 });
 
 
+
+
 $(document).ready(function(){
 
     $('.aScroll').click(function(){
@@ -133,7 +157,7 @@ $(document).ready(function(){
             scaleColor: "#ecf0f1",
             lineWidth: 20,
             lineCap: 'butt',
-            barColor: '#1abc9c',
+            barColor: '#26c2c0',
             trackColor:	"#ecf0f1",
             size: 160,
             animate:1300
@@ -144,7 +168,19 @@ $(document).ready(function(){
             scaleColor: "#ecf0f1",
             lineWidth: 20,
             lineCap: 'butt',
-            barColor: '#1abc9c',
+            barColor: '#26c2c0',
+            trackColor:	"#ecf0f1",
+            size: 160,
+            animate:1300
+        });
+    })
+
+    $('#skills').mouseenter(function(){
+        $('.chart').easyPieChart({
+            scaleColor: "#ecf0f1",
+            lineWidth: 20,
+            lineCap: 'butt',
+            barColor: '#26c2c0',
             trackColor:	"#ecf0f1",
             size: 160,
             animate:1300

@@ -10,7 +10,6 @@ body, html {
 .navbar-fixed-top.scrolled {
     background-color: #fff !important;
     transition: background-color 200ms linear;
-   
 }
   
 .navbar-fixed-top.scrolled .nav-link {
@@ -60,9 +59,8 @@ body, html {
   font-size: 1.4em;
 }
 
-/* Heart Icon */
-.heart-icon {
-  color: #f77;
+hr{
+    color:#555;
 }
 
 
@@ -101,13 +99,6 @@ i.fa {
   color: #4a4;
 }
 
-.fa-facebook:hover {
-  color: #04a;
-}
-
-.fa-codepen:hover {
-  color: #4af;
-}
 
 #profile { 
     width:75%;
@@ -128,4 +119,10 @@ i.fa {
     position: absolute;
     top: 0;
     left: 0;
+  }
+
+  @media screen and (min-width: 600px) {
+    .x-marg{
+        margin-left:13%;
+    }
   }
