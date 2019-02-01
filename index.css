@@ -108,4 +108,8 @@ i.fa {
   color: #4af;
 }
 
-#profile { vertical-align: middle; }
+#profile { 
+    width:75%;
+    border-radius: 30px;
+    position: relative;
+}
