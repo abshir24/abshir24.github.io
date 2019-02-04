@@ -14,34 +14,34 @@
         <link href="./index.css" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <nav id="navigation" class="navbar navbar-fixed-top">
-                <div class="container" style="padding-left:4px;">
+            <nav id="navigation" class="navbar navbar-default navbar-fixed-top opaque-navbar">
+                <div class="container" id="extra">
+                    <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
-                        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse" role="button">
-                            <span class="sr-only">Toggle Navigation</span>
-                            
-                            <span class="icon-bar"></span>
-                            
-                            <span class="icon-bar"></span>
-                            
-                            <span class="icon-bar"></span>
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i>
                         </button>
-                        <a href="#" class="navbar-brand">Abshir</a>
+                        <a class="navbar-brand page-scroll" href="#page-top" >Abshir</a>
                     </div>
-    
-                    <div class="collapse navbar-collapse">
-                        <ul class="nav navbar-nav navbar-right js-nav">
-                            <li class="aScroll"><a href="#about">About</a></li>
-                            <li class="aScroll"><a href="#skills">Skills</a></li>
-                            <li class="aScroll"><a href="#portfolio">Portfolio</a></li>
-                            <li class="aScroll"><a href="#contact">Contact</a></li>
+        
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a class="page-scroll" href="#about">About</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#skills">Skills</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#portfolio">Portfolio</a>
+                            </li>
                         </ul>
                     </div>
-                </div>		
-            </nav>     
-        </header>
-        
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
         <!-- First Parallax Image with Logo Text -->
         <div class="bgimg-1 w3-opacity w3-display-container">
             <div class="w3-display-middle" style="white-space:nowrap;">
@@ -93,58 +93,43 @@
         </div>
         
         <!-- Container (Portfolio Section) -->
-        <div class="w3-content w3-container w3-padding-64">
-            <h2 class="w3-center">MY WORK</h2>
-            <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-            <div class="w3-row-padding w3-center">
-            <div class="w3-col m3">
-                <img src="https://unsplash.it/400/300?random" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-            </div>
+        <!-- Images used to open the lightbox -->
+    <section>
+            <div class="w3-content w3-container w3-padding-64">
+                    <h2 class="w3-center">MY WORK</h2>
+                    <p class="w3-center"><em>Here are some of my latest lorem work.<br> Click on the images to make them bigger</em></p><br>
+                  
+                    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+                    <div class="w3-row-padding w3-center">
+                      <div class="w3-col m3">
+                        <img src="https://unsplash.it/400/300?random" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+                      </div>
+                  
+                      <div class="w3-col m3">
+                        <img src="https://unsplash.it/400/301?random" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+                      </div>
+                  
+                      <div class="w3-col m3">
+                        <img src="https://unsplash.it/400/302?random" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Modal for full size images on click-->
+                  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+                    <span class="w3-closebtn w3-hover-red w3-text-white w3-xxxlarge w3-container w3-display-topright">×</span>
+                    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                      <img id="img01" style="max-width:100%">
+                    </div>
+                  </div>
         
-            <div class="w3-col m3">
-                <img src="https://unsplash.it/400/301?random" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-            </div>
-        
-            <div class="w3-col m3">
-                <img src="https://unsplash.it/400/302?random" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-            </div>
-        
-            <div class="w3-col m3">
-                <img src="https://unsplash.it/400/303?random" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-            </div>
-            </div>
-        
-            <div class="w3-row-padding w3-center w3-section">
-            <div class="w3-col m3">
-                <img src="https://unsplash.it/400/304?random" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-            </div>
-        
-            <div class="w3-col m3">
-                <img src="https://unsplash.it/400/305?random" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-            </div>
-        
-            <div class="w3-col m3">
-                <img src="https://unsplash.it/400/306?random" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-            </div>
-        
-            <div class="w3-col m3">
-                <img src="https://unsplash.it/400/307?random" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-            </div>
-            </div>
-        </div>
-        
-        <!-- Modal for full size images on click-->
-        <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-            <span class="w3-closebtn w3-hover-red w3-text-white w3-xxxlarge w3-container w3-display-topright">×</span>
-            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-            <img id="img01" style="max-width:100%">
-            </div>
-        </div>
+    </section>
+    
         
         <!-- Third Parallax Image with Portfolio Text -->
         <div class="bgimg-3 w3-display-container" id="contact">
             <div class="w3-display-middle">
-            <h2 class="w3-xxlarge w3-text-light-grey w3-wide">CONTACT</h2>
+                <h2 class="w3-xxlarge w3-text-light-grey w3-wide">CONTACT</h2>
             </div>
         </div>
         
@@ -181,16 +166,14 @@
     <footer class="w3-center w3-grey w3-padding-48 cf">
         <div class="w3-full">
             <a target="_blank" href="https://www.linkedin.com/in/abshir-mohamed-661483107/">
-                <span class="tooltiptext">LinkedIn</span>
                 <i class="fa fa-linkedin fa-3x"></i>
             </a>
-            <a target="_blank" href="https://github.com/abshir24">
-                <span class="tooltiptext">Github</span>
-                <i class="fa fa-github fa-3x"></i>
-            </a>
-            <a  target="_blank" href="Abshir_Mohamed_Resume.pdf">
-                <span class="tooltiptext">Resume</span>
+            <a target="_blank" href="Abshir_Mohamed_Resume.pdf">
                 <i class="fa fa-envelope fa-3x"></i>
+            </a>
+            <a target="_blank" href="https://github.com/abshir24">
+                <i class="fa fa-github fa-3x"></i>
+                <span class="bl">Resume</span>
             </a>
         </div>
     </footer>
