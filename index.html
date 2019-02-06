@@ -10,6 +10,8 @@
         <title>Abshir Mohamed - Unity and Progress</title>
         <link href="https://www.w3schools.com/lib/w3.css" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <link href="./index.css" rel="stylesheet">
     </head>
@@ -91,35 +93,67 @@
             <span class="w3-xxlarge w3-text-light-grey w3-wide">PORTFOLIO</span>
             </div>
         </div>
+
+        <div class="w3-content w3-container w3-padding-64">
+            <h2 class="w3-center">MY WORK</h2>
+            <p style="text-align:center;">Click on pictures to view more and click links to view website</p>
+            <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+            <div class="w3-row-padding w3-center">
+                <div class="w3-col m4">
+                    <img src="./nexme1.jpg" style="width:100%" onclick="onClick(this);" class="w3-hover-opacity" data-toggle="modal" data-target=".bs-example-modal-lg">
+                    <a href="https://nexmeapp.com/">Link Here</a>
+                </div>
+            
+                <div class="w3-col m4">
+                    <img src="./laptop.jpg" style="width:100%" onclick="onClick(this);" class="w3-hover-opacity" data-toggle="modal" data-target=".bs-example-modal-lg">
+                    <a href="https://www.cecreditsonline.org/">Link Here</a>
+                </div>
+            
+                <div class="w3-col m4">
+                    <img src="CeHome.jpg" style="width:100%" onclick="onClick(this);" class="w3-hover-opacity" data-toggle="modal" data-target=".bs-example-modal-lg">
+                    <a href="https://www.cecreditsonline.org/">Link Here</a>
+                </div>
+            </div>
+        </div>
         
-        <!-- Container (Portfolio Section) -->
-        <!-- Images used to open the lightbox -->
-    <section>
-            <div class="w3-content w3-container w3-padding-64">
-                <h2 class="w3-center">MY WORK</h2>
-                
-                <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-                <div class="w3-row-padding w3-center">
-                    <div class="w3-col m3">
-                    <img src="./nexme1.jpg" style="width:100%" onclick="onClick(this);openModal();currentSlide(1)" class="w3-hover-opacity">
-                    </div>
-                
-                    <div class="w3-col m3">
-                    <img src="./laptop.jpg" style="width:100%" onclick="onClick(this);openModal();currentSlide(2)" class="w3-hover-opacity">
-                    </div>
-                
-                    <div class="w3-col m3">
-                    <img src="CeHome.jpg" style="width:100%" onclick="onClick(this);openModal();currentSlide(2)" class="w3-hover-opacity">
+        <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                            <img class="img-responsive" id="img01">
+                                <div class="carousel-caption">
+                                1/3
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive" id="img02">
+                                <div class="carousel-caption">
+                                2/3
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive" id="img03">
+                                <div class="carousel-caption">
+                                 3/3
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
                     </div>
                 </div>
             </div>
-                  
-                  <!-- Modal for full size images on click-->
-                  <!-- The Modal/Lightbox -->
-   
-       
+        </div>
         
-    </section>
     
         
         <!-- Third Parallax Image with Portfolio Text -->

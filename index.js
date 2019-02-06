@@ -146,30 +146,28 @@ $(window).scroll(function() {
 });
 
 // Modal Image Gallery
-    // function onClick(element) {
-    //     let source = document.getElementById("img01").src;
-    //     document.getElementById("img01").src = element.src;
-    //     document.getElementById("img011").src = element.src;
-    //     if(source == "./nexme1.jpg")
-    //     {
-    //         document.getElementById("img02").src = "./nexme2.jpg";
-    //         document.getElementById("img03").src = "./nexme3.jpg";
-    //         document.getElementById("img022").src = "./nexme2.jpg";
-    //         document.getElementById("img033").src = "./nexme3.jpg";
-    //     }else if(source == "./laptop.jpg")
-    //     {
-    //         document.getElementById("img02").src = "./map.jpg";
-    //         document.getElementById("img03").src = "./courses.jpg";
-    //         document.getElementById("img022").src = "./map.jpg";
-    //         document.getElementById("img033").src = "./courses.jpg";
-    //     }else{
-    //         document.getElementById("img02").src = "./Ce2.jpg";
-    //         document.getElementById("img03").src = "./Ce3.jpg";
-    //         document.getElementById("img022").src = "./Ce2.jpg";
-    //         document.getElementById("img033").src = "./Ce3.jpg";
-    //     }
-    //     // document.getElementById("modal01").style.display = "block";
-    // }
+    function onClick(element) {
+        let source = element.src;
+        document.getElementById("img01").src = element.src;
+
+        if(source.includes("nexme1.jpg"))
+        {
+            console.log(source)
+            document.getElementById("img02").src = "./nexme2.jpg";
+            document.getElementById("img03").src = "./nexme3.jpg";
+        }
+        if(source.includes("laptop.jpg"))
+        {
+            document.getElementById("img02").src = "./map.jpg";
+            document.getElementById("img03").src = "./courses.jpg";
+        }
+        if(source.includes("CeHome.jpg"))
+        {
+            document.getElementById("img02").src = "./Ce2.jpg";
+            document.getElementById("img03").src = "./Ce3.jpg";
+        }
+        // document.getElementById("modal01").style.display = "block";
+    }
 
     
 
