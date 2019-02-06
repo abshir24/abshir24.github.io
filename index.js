@@ -128,18 +128,7 @@ SmoothScroll({
    excluded          : ''    
 });
 
-
-// Modal Image Gallery
-function onClick(element) {
- document.getElementById("img01").src = element.src;
- document.getElementById("modal01").style.display = "block";
-}
-
 // Change style of navbar on scroll
-$('#skills').onscroll = function() {
-    
-};
-
 $(function () {
     $(document).scroll(function () {
         var $nav = $(".navbar-fixed-top");
@@ -147,8 +136,44 @@ $(function () {
       });
 });
 
+$(window).scroll(function() {
+    if($(this).scrollTop() > 50)  /*height in pixels when the navbar becomes non opaque*/ 
+    {
+        $('.opaque-navbar').addClass('opaque');
+    } else {
+        $('.opaque-navbar').removeClass('opaque');
+    }
+});
 
+// Modal Image Gallery
+    // function onClick(element) {
+    //     let source = document.getElementById("img01").src;
+    //     document.getElementById("img01").src = element.src;
+    //     document.getElementById("img011").src = element.src;
+    //     if(source == "./nexme1.jpg")
+    //     {
+    //         document.getElementById("img02").src = "./nexme2.jpg";
+    //         document.getElementById("img03").src = "./nexme3.jpg";
+    //         document.getElementById("img022").src = "./nexme2.jpg";
+    //         document.getElementById("img033").src = "./nexme3.jpg";
+    //     }else if(source == "./laptop.jpg")
+    //     {
+    //         document.getElementById("img02").src = "./map.jpg";
+    //         document.getElementById("img03").src = "./courses.jpg";
+    //         document.getElementById("img022").src = "./map.jpg";
+    //         document.getElementById("img033").src = "./courses.jpg";
+    //     }else{
+    //         document.getElementById("img02").src = "./Ce2.jpg";
+    //         document.getElementById("img03").src = "./Ce3.jpg";
+    //         document.getElementById("img022").src = "./Ce2.jpg";
+    //         document.getElementById("img033").src = "./Ce3.jpg";
+    //     }
+    //     // document.getElementById("modal01").style.display = "block";
+    // }
 
+    
+
+// skills secition code.
 
 $(document).ready(function(){
 
@@ -185,15 +210,6 @@ $(document).ready(function(){
             size: 160,
             animate:1300
         });
-    })
-    
+    }) 
 })
 
-$(window).scroll(function() {
-    if($(this).scrollTop() > 50)  /*height in pixels when the navbar becomes non opaque*/ 
-    {
-        $('.opaque-navbar').addClass('opaque');
-    } else {
-        $('.opaque-navbar').removeClass('opaque');
-    }
-});
